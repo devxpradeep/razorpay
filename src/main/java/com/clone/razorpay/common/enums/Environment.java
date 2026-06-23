@@ -1,4 +1,4 @@
-package com.clone.razorpay.merchant.entity;
+package com.clone.razorpay.common.enums;
 
 public enum Environment {
     LIVE,

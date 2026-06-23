@@ -16,7 +16,7 @@ import java.util.UUID;
 @Builder
 public class Merchant {
     @Id
-    @GeneratedValue(strategy = jakarta.persistence.GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @Column(nullable = false, length = 200)
@@ -40,7 +40,7 @@ public class Merchant {
 
     @Column(length = 200, nullable = false)
     @Enumerated(EnumType.STRING)
-    private final MerchantStatus status = MerchantStatus.PENDING_KYC;
+    private MerchantStatus status = MerchantStatus.PENDING;
 
     @Column(length = 20)
     private String gstId;

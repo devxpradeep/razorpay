@@ -1,7 +1,7 @@
 package com.clone.razorpay.common.enums;
 
 public enum MerchantStatus {
-    PENDING_KYC,
+    PENDING,
     ACTIVE,
     SUSPENDED
 }
